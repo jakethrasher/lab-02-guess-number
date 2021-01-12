@@ -2,6 +2,7 @@
 const guessAssessment = document.getElementById('guess-assess');
 const remainingGuessesSpan = document.getElementById('guesses-remaining');
 const userInput = document.getElementById('user-input');
+const resultDisplay = document.getElementById('results-display');
 const submitButton = document.getElementById('button');
 
 // initialize state
@@ -12,13 +13,7 @@ let secretNum = Math.ceil(Math.random() * 20);
 submitButton.addEventListener('click', () => {
     guessesRemaining--;
     remainingGuessesSpan.textContent = guessesRemaining;
-    if (guessesRemaining === 0) {
-        guessAssessment.textContent = 'Too Low!';
-        userInput.style.display = 'none';
-        submitButton.style.display = 'none';
-    }
-        
-    console.log(secretNum);
+
     let userGuess = (Number(userInput.value));
     if (userGuess < secretNum) {
         guessAssessment.textContent = 'You guessed too low!';
@@ -28,9 +23,23 @@ submitButton.addEventListener('click', () => {
         guessAssessment.textContent = 'You\'re Lucky As Hell';
         userInput.style.display = 'none';
         submitButton.style.display = 'none';
-        document.getElementById('make-dissapear').textContent = 'You Won!';
+        resultDisplay.textContent = 'You Won!';
+    }
+
+    if (guessesRemaining === 0) {
+        userInput.style.display = 'none';
+        submitButton.style.display = 'none';
+        resultDisplay.textContent = 'You Lost!';
+        guessAssessment.textContent = 'Sorry';
     }
 });
+
+
+
+
+
+
+
 
 
 
