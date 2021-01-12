@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <section class="main-section">
+            <p class="instructions">I'm thinking of a number between 1 and 20. Can you guess what the number is?</p>
+            <span id="guess-assess"></span>
+            <p id="make-dissapear">You have <span id="guesses-remaining">4</span> guesses remaining</p>
+            <input id="user-input" type="number" max="20">
+            <button id="button">Submit</button>
+
+        </section>
+    </main>
+    <footer>
+        <div class="copy gutter-right">&copy; 2020 Alchemy Code Lab</div>
+    </footer>
+
+    <script type="module" src="app.js"></script>
+</body>
+
+</html>
