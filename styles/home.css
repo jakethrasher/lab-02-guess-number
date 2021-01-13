@@ -1,1 +1,10 @@
 /* add home page styles here */
+.instructions{
+    font-size: 1.7rem;
+}
+.results-display{
+    font-size: 1.5rem;
+}
+.guess-assess{
+    color: red;
+}
