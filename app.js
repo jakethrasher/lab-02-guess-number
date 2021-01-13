@@ -7,7 +7,6 @@ const userInput = document.getElementById('user-input');
 const resultDisplay = document.getElementById('results-display');
 const submitButton = document.getElementById('button');
 
-
 // initialize state
 let guessesRemaining = 4;
 let secretNum = Math.ceil(Math.random() * 20);
@@ -17,8 +16,6 @@ submitButton.addEventListener('click', () => {
     guessesRemaining--;
     remainingGuessesSpan.textContent = guessesRemaining;
     
-    
-
     let userGuess = (Number(userInput.value));
     let answer = compareNumbers(userGuess, secretNum);
     if (answer === 1) {
@@ -41,6 +38,9 @@ submitButton.addEventListener('click', () => {
     console.log(secretNum);
 
 });
+
+    
+
 
     
 
