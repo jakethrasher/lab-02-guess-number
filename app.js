@@ -22,9 +22,9 @@ submitButton.addEventListener('click', () => {
     let userGuess = (Number(userInput.value));
     let answer = compareNumbers(userGuess, secretNum);
     if (answer === 1) {
-        guessAssessment.textContent = 'You guessed too high! Go lower..';
+        guessAssessment.textContent = 'Hmm.. you guessed too high.. go lower..';
     } else if (answer === -1) {
-        guessAssessment.textContent = 'You guessed too low! Go Higher..';
+        guessAssessment.textContent = 'It seems that you guessed too low.. go higher..';
     } else if (answer === 0) {
         guessAssessment.textContent = 'You\'re Lucky As Hell';
         userInput.style.display = 'none';
