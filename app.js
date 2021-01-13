@@ -34,7 +34,7 @@ submitButton.addEventListener('click', () => {
     if (guessesRemaining === 0 && answer !== 0) {
         userInput.style.display = 'none';
         submitButton.style.display = 'none';
-        resultDisplay.textContent = 'You Lost!';
+        resultDisplay.textContent = `You lost! The right number was ${secretNum}`;
         guessAssessment.textContent = 'Sorry';
     }
 

@@ -6,5 +6,15 @@
     font-size: 1.5rem;
 }
 .guess-assess{
-    color: red;
+    color: rgb(255, 4, 0);
+}
+.button{
+    border: none;
+    margin: 10px;
+    height: 38px;
+    width: 80px;
+    font-size: 1rem;
+    background-color: rgb(201, 181, 203) ;
+    border-radius: 15px;
+    color: rgb(244, 238, 238);
 }
