@@ -22,9 +22,9 @@ submitButton.addEventListener('click', () => {
     let userGuess = (Number(userInput.value));
     let answer = compareNumbers(userGuess, secretNum);
     if (answer === 1) {
-        guessAssessment.textContent = 'You guessed too high!';
+        guessAssessment.textContent = 'You guessed too high! Go lower..';
     } else if (answer === -1) {
-        guessAssessment.textContent = 'You guessed too low!';
+        guessAssessment.textContent = 'You guessed too low! Go Higher..';
     } else if (answer === 0) {
         guessAssessment.textContent = 'You\'re Lucky As Hell';
         userInput.style.display = 'none';
@@ -35,14 +35,14 @@ submitButton.addEventListener('click', () => {
         userInput.style.display = 'none';
         submitButton.style.display = 'none';
         resultDisplay.textContent = `You lost! The right number was ${secretNum}`;
-        guessAssessment.textContent = 'Sorry';
+        guessAssessment.style.display = 'none';
     }
-
+        
     console.log(secretNum);
 
-    
 });
 
+    
 
 
 
@@ -53,16 +53,8 @@ submitButton.addEventListener('click', () => {
 
 
 
-// if (userGuess < secretNum) {
-    //     guessAssessment.textContent = 'You guessed too low!';
-    // } else if (userGuess > secretNum) {
-    //     guessAssessment.textContent = 'You guessed too high!';
-    // } else if (userGuess === secretNum) {
-    //     guessAssessment.textContent = 'You\'re Lucky As Hell';
-    //     userInput.style.display = 'none';
-    //     submitButton.style.display = 'none';
-    //     resultDisplay.textContent = 'You Won!';
-    // }
+
+
    
     
 

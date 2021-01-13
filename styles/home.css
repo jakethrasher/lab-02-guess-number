@@ -1,20 +1,40 @@
 /* add home page styles here */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap');
+
+body{
+    font-family: 'Work Sans', sans-serif;
+    color: white;
+    background: linear-gradient( #c1c199,#b0d576);
+}
 .instructions{
-    font-size: 1.7rem;
+    margin-top: 150px;
+    font-size: 2rem;
 }
 .results-display{
     font-size: 1.5rem;
 }
 .guess-assess{
-    color: rgb(255, 4, 0);
+    color: rgb(218, 143, 103);
+    font-size: 1.5rem;
+}
+input{
+    font-family: 'Work Sans', sans-serif;
+    width: 5rem;
+    height: 3rem;
+    font-size: 1.8rem;
+    color: rgba(62, 59, 59, 0.824);
+    border-radius: 5px;
+    border: 0.5px solid grey;
+    margin-bottom: 10px;
+    background-color: rgb(235, 228, 228);
 }
 .button{
     border: none;
     margin: 10px;
     height: 38px;
     width: 80px;
-    font-size: 1rem;
-    background-color: rgb(201, 181, 203) ;
-    border-radius: 15px;
-    color: rgb(244, 238, 238);
+    font-size: 1.3rem;
+    background-color: rgba(74, 75, 60, 0.529) ;
+    border-radius: 8px;
+    color:rgb(235, 228, 228);
 }
