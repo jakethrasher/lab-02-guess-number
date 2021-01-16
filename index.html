@@ -19,12 +19,13 @@
 
             <span id="give-feedback" class="guess-assess"></span>
             
-            <span id="guesses-remaining"></span>
+            <p class="number-of-guesses" id="number-of-guesses">Number of guesses: <span id="guesses-remaining">4</span></p>
             
-            <input id="user-input" type="number" max="20">
+            <input id="user-input" type="number" min="0" max="20">
 
-            <button id="button" class="button">enter</button>
         </section>
+        <button id="button" class="button">enter</button>
+        <button class="button reset" id="reset-button">reset</button>
     </main>
 
     <footer>

@@ -6,8 +6,12 @@ body{
     color: white;
     background: linear-gradient( #c1c199,#b0d576);
 }
+.main-section{
+    margin-top:0px;
+    padding-top: 0px;
+}
 .instructions{
-    margin-top: 150px;
+    margin-top: 50px;
     font-size: 2rem;
 }
 .results-display{
@@ -16,6 +20,10 @@ body{
 .guess-assess{
     color: rgb(218, 143, 103);
     font-size: 1.5rem;
+    height: 80px;
+}
+.number-of-guesses, #guesses-remaining{
+    font-size: 1.7rem;
 }
 input{
     font-family: 'Work Sans', sans-serif;
@@ -37,4 +45,7 @@ input{
     background-color: rgba(74, 75, 60, 0.529) ;
     border-radius: 8px;
     color:rgb(235, 228, 228);
+}
+.reset{
+    background-color: rgba(225, 146, 50, 0.434) ;
 }

@@ -12,22 +12,24 @@ export function tooLowFunction(answer, giveFeedback) {
 
 }
 
-export function winFunction(answer, giveFeedback, remainingGuessesSpan, userInput, submitButton) {
+export function winFunction(answer, giveFeedback, remainingGuessesSpan, userInput, submitButton, numberOfGuessesElement) {
     if (answer === 0) {
         giveFeedback.textContent = 'You\'re Lucky As Hell, You won!';
         remainingGuessesSpan.textContent = '';
         userInput.style.display = 'none';
         submitButton.style.display = 'none';
+        numberOfGuessesElement.style.display = 'none';
     }
 
 }
 
-export function lastChanceFunction(guessesRemaining, answer, userInput, submitButton, giveFeedback, remainingGuessesSpan, secretNum) {
+export function lastChanceFunction(guessesRemaining, answer, userInput, submitButton, giveFeedback, remainingGuessesSpan, secretNum, numberOfGuessesElement) {
     if (guessesRemaining === 0 && answer !== 0) {
         userInput.style.display = 'none';
         submitButton.style.display = 'none';
         remainingGuessesSpan.textContent = '';
         giveFeedback.textContent = `You lost! The right number was ${secretNum}`;
+        numberOfGuessesElement.style.display = 'none';
     }
 }
         

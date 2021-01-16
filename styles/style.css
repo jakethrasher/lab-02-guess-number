@@ -23,11 +23,14 @@ body {
 }
 
 main {
+    margin: 80px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-bottom: calc(var(--footer-height));
+    /* border: 2px solid black; */
+    height: 80%;
 }
 
 section {
